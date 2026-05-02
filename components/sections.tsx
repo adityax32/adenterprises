@@ -1,14 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
-  BadgeCheck,
   Building2,
-  Camera,
-  CirclePlay,
   Flame,
   Forklift,
   Mail,
   MapPin,
-  MessageCircle,
   Mountain,
   Phone,
   Pickaxe,
@@ -281,7 +278,7 @@ export function ProjectsSection() {
                   {project.description}
                 </p>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="krona inline-flex pt-2 text-[13px] uppercase text-black underline underline-offset-4 hover:text-[var(--color-orange)]"
                 >
                   View More
@@ -355,22 +352,9 @@ export function SiteFooter() {
       <Reveal className="container-shell">
         <div className="grid gap-12 pb-14 lg:grid-cols-[1.05fr_0.7fr_0.95fr_1.25fr]">
           <div className="space-y-7">
-            <a href="#home" className="logo-text text-[1.45rem] font-black text-white lg:text-[1.6rem]">
+            <Link href="/#home" className="logo-text text-[1.45rem] font-black text-white lg:text-[1.6rem]">
               {company.name}
-            </a>
-            <div className="flex items-center gap-4">
-              {[Camera, BadgeCheck, CirclePlay, MessageCircle].map(
-                (Icon, index) => (
-                <a
-                  key={index}
-                  href="#contact"
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 text-white hover:border-[var(--color-orange)] hover:text-[var(--color-orange)]"
-                >
-                  <Icon className="h-5 w-5" strokeWidth={1.9} />
-                </a>
-                ),
-              )}
-            </div>
+            </Link>
           </div>
           <div className="space-y-5">
             <h3 className="krona border-b border-[var(--color-orange)] pb-1 text-[0.72rem] uppercase sm:text-[0.78rem]">

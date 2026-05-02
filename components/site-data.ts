@@ -9,11 +9,11 @@ export const company = {
 };
 
 export const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "About Us", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/#home" },
+  { label: "Services", href: "/#services" },
+  { label: "Projects", href: "/#projects" },
+  { label: "About Us", href: "/#about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const stats = [

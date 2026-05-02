@@ -12,7 +12,7 @@ const baseClasses =
 
 export function Button({
   children,
-  href = "#contact",
+  href = "/contact",
   variant = "solid",
   className = "",
 }: ButtonProps) {
